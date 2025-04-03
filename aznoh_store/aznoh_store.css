@@ -32,16 +32,19 @@ header{
     background-color: rgb(211, 211, 211);
 }
 #setupmenu{
-    position: relative;
-    overflow: hidden;
-    float: right;
-    top: -52px;
+    position: absolute;
+    overflow-x: hidden;
+    right: 0;
+    top: 0;
+    
     min-width: 300px;
     width: 40%;
     height: 100%;
     background-color: rgb(25, 25, 25);
     z-index: -1;
 
+    
+  
     
 }
 
@@ -110,23 +113,30 @@ a{
 }
 
 #content{
+    
+    
     display:flex; 
     width: 90%;
+    
     align-items: center;
-   
-    margin-left: 10px;
+    
+    margin-left: 5%;
     
 
 }
 .abo{
     width: 100px;
     height: 100px;
-    color: aqua;
+    background-color: rgb(144, 151, 151);
 }
 .text{
-    margin-top: -240px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px;
+    font-weight: 400;
+    height: 150px;
     max-width: 200px;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: slideRight 1s ease-in-out;
 }
@@ -138,35 +148,62 @@ a{
 }
 
 .secondary{
-    width: 40%;
-    margin-top: 10px;
+    width: 100%;
     font-size: 80%; 
     animation: slideRight 1.3s ease-in-out 0s 1;
-    
+    margin-left: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #jordans{
     position: relative;
-    
-    margin-top: -250px;
-    max-width: 300px;
+    margin-top: 50px;
+    margin-left: -100px;
+    width: 300px;
     animation: slideLeft 1.3s ease-in-out;
     
 }
-
-@media (max-width: 600px) {
+@media (min-width: 440px) {
+    #content{
+        justify-content: space-between;
+    }
     #jordans {
         width: 400px;
-        
-        
-        
+        margin-top: -10px;
     }
 }
 
-@media (min-width: 1500px) {
-    .secondary {
-        font-size: 24px; /* Zvětšení písma pro větší obrazovky */
+@media (min-width: 600px) {
+    .secondary{
+        font-size: 100%; 
     }
+    .text {
+        font-size: 50px; /* Zvětšení písma pro větší obrazovky */
+    }
+    #jordans {
+        
+        margin: 0;
+    }
+   
 }
+@media (min-width:800px) {
+    
+    .text {
+        font-size: 70px; /* Zvětšení písma pro větší obrazovky */
+    }
+    #jordans {
+        width: 600px;
+        margin-top: 20px;
+    }
+    #content{
+        justify-content: center;
+        
+    }
+   
+}
+
+
+
+
 
 
 @keyframes slideRight{

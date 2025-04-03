@@ -8,10 +8,12 @@ function $(x){
 }
 function backtomenu(){
     
-    
+    setTimeout(() => {
+        $("setupmenu").style.zIndex ="-1"
+    }, 680);
    
     $("setupmenu").style.animation = "slideRightFrom0 0.7s"
-    $("setupmenu").style.transform = 'translateX(100%)'
+    
 }
 function toinsidemenu(){
     
