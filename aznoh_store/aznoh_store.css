@@ -3,6 +3,7 @@ html,body{
     margin: 0; padding: 0; width: 100%; height: 100%;
     overflow: hidden;
     background-color:rgb(232, 232, 231);
+    
 }
 #head{
     display: flex;
@@ -18,6 +19,39 @@ header{
     border-width: 0px 0px 2px;
     justify-content:space-between ;
 
+}
+
+#menu{
+    height: 100%;
+    width: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+#menu:hover{
+    background-color: rgb(211, 211, 211);
+}
+#setupmenu{
+    position: relative;
+    overflow: hidden;
+    float: right;
+    top: -52px;
+    min-width: 300px;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(25, 25, 25);
+    z-index: -1;
+
+    
+}
+
+#cross{
+    float: right;
+    margin: 5px;
+}
+#cross:hover{
+    background-color: rgb(43, 43, 43);
+    border-radius: 50%;
 }
 
 .sign_in{
@@ -53,29 +87,7 @@ header{
     
     
 }
-#menu{
-    height: 100%;
-    width: 45px;
-    padding-left: 5px;
-    padding-right: 5px;
-    
-}
-#menu:hover{
-    background-color: rgb(211, 211, 211);
-}
-#setupmenu{
-    position: relative;
-    overflow: hidden;
-    float: right;
-    top: -52px;
-    min-width: 300px;
-    width: 40%;
-    height: 100%;
-    background-color: rgb(25, 25, 25);
-    z-index: -1;
 
-    
-}
 a{
     display: flex;
     margin-left: 20px;
@@ -97,73 +109,65 @@ a{
     }
 }
 
-#cross{
-    float: right;
-    margin: 5px;
-}
-#cross:hover{
-    background-color: rgb(43, 43, 43);
-    border-radius: 50%;
-}
-
-#jordans{
-    position: relative;
-    overflow: hidden;
-    float: right;
-    bottom: 55px;
-    left: 150px;
-    max-width: 1000px;
-    min-width: 540px;
-    width: 100%;
-    animation: slideLeft 1.3s ease-in-out;
-    
-}
-
-@media (max-height: 600px) {
-    #jordans {
-        position: relative;
-        float: right;
-        
-        
-    }
-}
-
 #content{
-   
+    display:flex; 
     width: 90%;
+    align-items: center;
+   
+    margin-left: 10px;
     
-    
+
 }
-#text{
-    margin-top: 100px;
-    width: 80%;
-    min-width: 350px;
-    font-size: 29px;
+.abo{
+    width: 100px;
+    height: 100px;
+    color: aqua;
+}
+.text{
+    margin-top: -240px;
+    max-width: 200px;
+    font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: slideRight 1s ease-in-out;
 }
 
 @media (min-width: 1500px) {
-    #text {
+    .text {
         font-size: 50px; /* Zvětšení písma pro větší obrazovky */
     }
 }
 
-#secondary{
+.secondary{
     width: 40%;
-    min-width: 350px;
-    margin-top: 20px;
-    font-size: 80%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-size: 80%; 
     animation: slideRight 1.3s ease-in-out 0s 1;
     
 }
+#jordans{
+    position: relative;
+    
+    margin-top: -250px;
+    max-width: 300px;
+    animation: slideLeft 1.3s ease-in-out;
+    
+}
+
+@media (max-width: 600px) {
+    #jordans {
+        width: 400px;
+        
+        
+        
+    }
+}
 
 @media (min-width: 1500px) {
-    #secondary {
+    .secondary {
         font-size: 24px; /* Zvětšení písma pro větší obrazovky */
     }
 }
+
 
 @keyframes slideRight{
     from {
