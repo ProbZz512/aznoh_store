@@ -84,6 +84,7 @@ header{
 #logo{
     display: flex;
     align-items: center;
+    user-select: none;
     height: 100%;
     font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -130,6 +131,7 @@ a{
     background-color: rgb(144, 151, 151);
 }
 .text{
+    user-select: none;
     display: flex;
     align-items: center;
     margin: 0 0 40px;
@@ -155,6 +157,7 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #jordans{
+    
     position: relative;
     margin-top: 50px;
     margin-left: -100px;
