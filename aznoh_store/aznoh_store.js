@@ -17,7 +17,7 @@ function backtomenu(){
 }
 function toinsidemenu(){
     
-    $("setupmenu").style.zIndex = "1"
+    $("setupmenu").style.zIndex = "15"
     $("setupmenu").style.transform = 'translateX(0)'
     $("setupmenu").style.animation = "slideLeft 0.7s"
 }

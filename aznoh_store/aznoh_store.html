@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="aznoh_store.css">
 
 </head>
@@ -25,38 +26,47 @@
         Find the hottest and the most exclusive sneakers
     </article>
 
-    <section class="produkty" id="produkty">
-        <div id="produkt1" class="produkt" z-index="5">
-            <div  class="white">
-                <img src="pngwing.com.png" class="sneaker">
-                
-            </div>
-            AIR JORDAN
-        </div>
-            
-        <div id="produkt2" class="produkt">
-            <div  class="white">
-                <img src="pngwing.com.png" class="sneaker">
+    <section class="produkty swiper" id="produkty">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div id="produkt1" class="produkt swiper-slide" z-index="5">
+                    <div  class="white">
+                        <img src="pngwing.com.png" class="sneaker">
+                        
+                    </div>
+                    AIR JORDAN
+                </div>
                     
+                <div id="produkt2" class="produkt swiper-slide">
+                    <div  class="white">
+                        <img src="pngwing.com.png" class="sneaker">
+                            
+                    </div>
+                    AIR JORDAN
+                </div>
+                <div id="produkt3" class="produkt swiper-slide">
+                    <div  class="white">
+                        <img src="pngwing.com.png" class="sneaker">
+                            
+                    </div>
+                    AIR JORDAN
+                </div>
+                <div id="produkt4" class="produkt swiper-slide">
+                    <div  class="white">
+                        <img src="pngwing.com.png" class="sneaker">
+                            
+                    </div>
+                    AIR JORDAN
+                </div>
             </div>
-            AIR JORDAN
-        </div>
-        <div id="produkt3" class="produkt">
-            <div  class="white">
-                <img src="pngwing.com.png" class="sneaker">
-                    
-            </div>
-            AIR JORDAN
-        </div>
-        <div id="produkt4" class="produkt">
-            <div  class="white">
-                <img src="pngwing.com.png" class="sneaker">
-                    
-            </div>
-            AIR JORDAN
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
     <script src="aznoh_store.js"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper_script.js"></script>
 </body>
 </html>

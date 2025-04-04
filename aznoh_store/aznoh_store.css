@@ -1,4 +1,10 @@
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html,body{
     margin: 0; padding: 0; width: 100%; height: 100%;
     overflow-x: hidden;
@@ -146,7 +152,7 @@ header{
 .secondary{
     width: 90%;
     font-size: 80%; 
-    animation: slideUp 1.6s ease-in-out;
+    animation: slideRight 1.6s ease-in-out;
     margin-left: 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -160,21 +166,16 @@ header{
     
 }
 
-.sneaker{
+.produkty{
     width: 90%;
-    
-    
 }
 
-.produkty{
-    position: absolute;
+.card-list .produkt{
     display: flex;
+    align-items: center;
     justify-content: center;
-    grid-template-columns: auto ;
-    gap: 2%;
-    width: 100%;
-    
-    animation: slideUp 1.6s ease-in-out ;
+    flex-direction: column;
+    width: 400px;
 }
 .white{
     display: flex;
@@ -184,10 +185,13 @@ header{
     margin:5px 0 5px;
     background-color:rgb(255, 244, 244);
 }
-.produkt{
-    position: absolute;
+
+.sneaker{
     width: 90%;
+    
+    
 }
+
 
 
 @media (min-width: 440px) {
@@ -237,9 +241,7 @@ header{
     .secondary{
         font-size: 120%;
     }
-    .white{
-        height: 550px;
-    }
+    
    
    
 }
@@ -254,7 +256,9 @@ header{
     .secondary{
         font-size: 130%; 
     }
-   
+   .white{
+        height: 550px;
+    }
 }
 @media (min-width: 1200px) {
     
